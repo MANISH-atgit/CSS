@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+     <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+  </head>
+
+  <body>
+  <div class="banner">
+      <div class="form">
+      <h2>REGISTRATION FORM</h2>
+        <form action="welcome.php" method="post">
+                <div>   
+                  <label class="name" for="fname">Name</label>
+                  <input type="text" id="fname" name="fname" placeholder="First Name"size="28px" required >&nbsp
+                  <input type="text" id="lname" name="lname" placeholder="Last Name"size="28px" required >
+                </div>
+
+                <br>
+
+                <div>
+                  <label class="email" for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="abc@gmail.com" size="63px" required>
+                </div>
+
+                <br>
+
+                <div>
+                  <label class="pswd" for="pswd">Password</label>
+                  <input type="password" id="pswd" name="pswd" placeholder="Password" size="63px" required>
+                </div>
+
+                <br>
+
+                <div>
+                  <label class="gender">Gender</label>
+                  <label class="radio">
+                    <input type="radio" name="myRdioField" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Male
+                  </label>
+
+                  <label class="radio">
+                    <input type="radio" name="myRdioField" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Female
+                  </label>
+                </div>
+
+                <br>
+
+                <div class="address">
+                  <p>Address</p>
+                  <textarea class="message" name="Address" rows="4" cols="50"  maxlength="200" placeholder="Type Your Address"></textarea>
+                </div>
+
+                <br>
+
+                <div class="file">
+                  <label class="file" for="fileupload">Upload File</label>
+                  <input type="file" class="fileupload" name="Upload File" id="fileToUpload">
+                </div> 
+
+                <div class="button">
+                  <input type="reset" id="button1">&nbsp&nbsp&nbsp&nbsp
+                  <input type="Submit" id="button2">
+                </div>
+
+        </form>  
+    </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,302 @@
+
+
+*{
+    font-family: Century Gothic;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar {
+    height: 52px;
+    width: 100%;
+    background-color: #443345;
+
+}
+
+.leftnav ul{
+    float: left;
+    list-style-type: none;
+    margin-left: 0px;
+}
+
+.leftnav ul li img{
+    height: 29px;
+    margin-right: 20px;
+    padding: 0;
+}
+
+.leftnav ul li {
+  display: inline-block;
+}
+
+.leftnav-searchbox input{
+  border-radius: 1px;
+  border: none;
+  height: 29px;
+  text-align: center;
+}
+
+.leftnav-searchbox button{
+  border: 1px solid #fff;
+  border-radius: 1px;
+  color: #808080;
+  background-color: #fff;
+  height: 29px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.middlenav ul {
+    position: absolute;
+    top: -6px;
+    right: 250px;
+    float: right;
+    list-style-type: none;
+
+}
+
+.middlenav ul li {
+    display: inline-block;
+}
+
+.middlenav ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    color:  #D8D8D8;
+    padding: 20px 20px 15px;
+    margin-right: -6px;
+}
+
+.middlenav .logo3 {
+  font-size: 25px;
+  color: #fff;
+  padding: 1px 20px 10px;
+}
+
+
+
+.middlenav ul li a:hover, .middlenav ul li.active a{
+    background-color: #665565;
+    border-bottom: 3px solid #EB233C;
+    display: block;
+    color: white;
+}
+
+
+
+
+
+
+.rightnav ul {
+    float: right;
+    list-style-type: none;
+
+}
+
+.rightnav ul li {
+    display: inline-block;
+}
+
+.rightnav ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    color:  #D8D8D8;
+    padding: 20px 20px 18px;
+}
+
+.rightnav .logo4{
+  font-size: 20px;
+  padding-bottom: 16px;
+}
+
+.rightnav .logo33{
+  font-size: 15px;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  right: -10px;
+  background-color: #443345;
+  box-shadow: 0px 2px 5px 0px #636363;
+  margin-top: 14px;
+  width: 120px;
+}
+
+.content a {
+  text-align: center;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .content {
+  display: block;
+
+}
+
+.rightnav ul li a:hover, .rightnav ul li.active a{
+    background-color: #665565;
+}
+
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  margin-right: 40px;
+  margin-top:-7px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+
+.link{
+  display: flex;
+  width: 100%;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+
+footer{
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px){
+  .leftnav{
+    position: absolute;
+    left: 60px;
+    top: 10px;
+  }
+
+  .leftnav input{
+    width: 70px;
+    margin-left: -15px;
+  }
+
+  .checkbtn{
+    display: block;
+    margin-right: 0px;
+  }
+
+  .middlenav ul{
+    position: fixed;
+    width: 100%;
+    top: 52px;
+    left: -100%;
+    text-align: center;
+    background-color: rgb(15, 5, 20);
+    height: 575px;
+    z-index: 1;
+    transition: 0.4s ease; 
+
+  }
+  .middlenav ul li{
+    display: block;
+    margin: 50px 0;
+    margin-left: -30px;
+    line-height: 30px;
+  }
+  .middlenav ul li a{
+    font-size: 25px;
+
+  }
+  .middlenav ul li a:hover, .middlenav ul li.active a{
+     background: none;
+     color: #EB233C;
+     border: none;
+     display: inline;
+     border-bottom: 1px solid #EB233C;
+  }
+
+
+
+  .rightnav{
+    float: right;
+    margin: 0px;
+  }
+
+
+  .rightnav ul li a{
+    font-size: 10px;
+    padding: 0px;
+  }
+
+  .rightnav .logo4{
+    font-size: 12px;
+    padding-left: 10px;
+  }
+
+  .rightnnav .logo33{
+    font-size: 5px;
+  }
+
+  .content{
+    position: absolute;
+    top: 10px;
+    width: 80px;
+  }
+
+  .content a{
+    padding: 40px;
+    width: 80px;
+  }
+
+  .dropdown:hover .content {
+    display: block;
+  }
+
+  .rightnav ul li a:hover, .middlenav ul li.active a{
+     background: none;
+     color: #EB233C;
+     border: none;
+     display: inline;
+     border-bottom: 1px solid #EB233C;
+  }
+
+
+  #check:checked ~ .middlenav ul{
+    left: 0;
+  }
+
+
+
+
+.link{
+  font-size: 20px;
+  height: 500px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+}
